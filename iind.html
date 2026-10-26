@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Тірамісу: Улюблений італійський десерт від шефа</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Тірамісу — Покроковий рецепт італійського десерту з домашнім Савоярді</title>
+    <meta name="description" content="Дізнайтеся, як приготувати класичний італійський десерт Тірамісу з домашнім печивом Савоярді та ніжним кремом на паровій бані. Покроковий рецепт від шефа.">
+    <meta name="keywords" content="тірамісу, рецепт тірамісу, савоярді, маскарпоне, італійський десерт, десерт із кавою, рецепт клопотенко">
+    <meta name="author" content="Петелюк Ірина">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3014/3014318.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,7 +17,7 @@
     <header class="site-header" id="main-header">
         <div class="header-container">
             <div class="logo">Тірамісу</div>
-            <nav class="site-nav">
+            <nav class="site-nav" aria-label="Головне меню сайту">
                 <ul>
                     <li><a href="#about">Про тему</a></li>
                     <li><a href="#ingredients">Інгредієнти</a></li>
@@ -24,153 +28,186 @@
         </div>
     </header>
 
-    <div class="container">
-        <section id="about" class="cont_sect card">
-            <h1 id="page-title">Тірамісу: улюблений італійський десерт із домашнім печивом Савоярді</h1>
-            <span class="sect_span">ХІТ</span>
-            <p class="intro">
-                <strong>Тірамісу</strong> — це, без перебільшення, найвідоміший італійський десерт у світі. Він підкорює своєю
-                ніжністю, гармонійним поєднанням гіркого какао, кави та повітряного крему.
-            </p>
-            <p style="margin-top: 15px;">
-                Головний секрет справжнього десерту — це правильно приготовлені бісквітні палички.<br>
-                Замість того щоб купувати готові вироби, ми зробимо <strong>печиво Савоярді</strong> власноруч,<br>
-                а крем підготуємо на паровій бані, щоб отримати максимальну шовковистість та безпечність!
-            </p>
+    <main id="main-content" class="container">
+        
+        <h1 id="page-title">Тірамісу: улюблений італійський десерт із домашнім печивом Савоярді</h1>
+        
+        <section id="about" class="cont_sect">
+            <h2>Про десерт</h2>
+            <article class="card"> 
+                <span class="sect_span">ХІТ</span>
+                <p class="intro">
+                    <strong>Тірамісу</strong> — це, без перебільшення, найвідоміший італійський десерт у світі. Він підкорює своєю
+                    ніжністю, гармонійним поєднанням гіркого какао, кави та повітряного крему.
+                </p>
+                <p style="margin-top: 15px;">
+                    Головний секрет справжнього десерту — це правильно приготовлені бісквітні палички.<br>
+                    Замість того щоб купувати готові вироби, ми зробимо <strong>печиво Савоярді</strong> власноруч,<br>
+                    а крем підготуємо на паровій бані, щоб отримати максимальну шовковистість та безпечність!
+                </p>
+            </article>
         </section>
 
         <section class="card">
             <h2 class="section-title">Ніжність у кожному шматочку</h2>
-            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80"
-                alt="Класичний італійський десерт Тірамісу, посипаний какао-порошком" class="main-img">
+            <article class="card" style="border: none; box-shadow: none; padding: 0; margin: 0;">
+                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80"
+                    alt="Класичний італійський десерт Тірамісу у скляній формі, рясно посипаний какао-порошком" class="main-img">
+            </article>
         </section>
 
-        <section id="ingredients" class="card">
+        <section id="ingredients">
             <h2 class="section-title">Інгредієнти для десерту</h2>
-            <p style="margin-bottom: 15px;">Для приготування домашнього Тірамісу вам знадобляться такі інгредієнти:</p>
+            <article class="card">
+                <p style="margin-bottom: 15px;">Для приготування домашнього Тірамісу вам знадобляться такі інгредієнти:</p>
 
-            <h3>Для печива Савоярді:</h3>
-            <ul>
-                <li>4 яйця</li>
-                <li>100 г цукру</li>
-                <li>100 г борошна</li>
-                <li>цукрова пудра для присипки</li>
-            </ul>
+                <h3>Для печива Савоярді:</h3>
+                <ul>
+                    <li>4 яйця</li>
+                    <li>100 г цукру</li>
+                    <li>100 г борошна</li>
+                    <li>цукрова пудра для присипки</li>
+                </ul>
 
-            <h3>Для ніжного крему:</h3>
-            <ul>
-                <li>500 г сиру <em class="highlight">Маскарпоне</em></li>
-                <li>500 мл вершків (33% жирності)</li>
-                <li>8 жовтків</li>
-                <li>8 ст. л. цукру</li>
-            </ul>
+                <h3>Для ніжного крему:</h3>
+                <ul>
+                    <li>500 г сиру <em class="highlight">Маскарпоне</em></li>
+                    <li>500 мл вершків (33% жирності)</li>
+                    <li>8 жовтків</li>
+                    <li>8 ст. л. цукру</li>
+                </ul>
 
-            <h3>Для просочування та декору:</h3>
-            <ul>
-                <li>300 мл міцної готової кави</li>
-                <li>50 мл рому або коньяку (за смаком)</li>
-                <li>2 ст. л. какао-порошку</li>
-            </ul>
+                <h3>Для просочування та декору:</h3>
+                <ul>
+                    <li>300 мл міцної готової кави</li>
+                    <li>50 мл рому або коньяку (за смаком)</li>
+                    <li>2 ст. л. какао-порошку</li>
+                </ul>
+            </article>
         </section>
 
-        <section id="gallery" class="card">
-            <h2 class="section-title">Покроковий рецепт приготування</h2>
-            <div class="grid-gallery">
-                <div class="grid-item">
-                    <strong>Випікання печива Савоярді:</strong><br>
-                    Відокремте білки від жовтків. Збийте білки до міцних піків.
-                    Жовтки збийте з цукром, з'єднайте обидві маси, додайте просіяне борошно.
-                    За допомогою кондитерського мішка відсадіть смужки на деко,
-                    посипте пудрою та випікайте 10-12 хвилин при 180°C.<br>
-                    <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-2-img.jpg?v=1720543439"
-                        alt="Приготування тіста для печива Савоярді" class="step-img">
-                </div>
-                <div class="grid-item">
-                    <strong>Термообробка жовтків:</strong><br>
-                    Помістіть 8 жовтків із цукром у миску та поставте на парову баню.
-                    Постійно збивайте віничком, поки маса не стане світлою та однорідною.
-                    Зніміть і дайте охолонути.<br>
-                    <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-3-img.jpg?v=1720543438"
-                        alt="Термообробка жовтків на паровій бані" class="step-img">
-                </div>
-                <div class="grid-item">
-                    <strong>Приготування крему:</strong><br>
-                    Збийте холодні вершки до стійких піків.
-                    В окремій ємності з'єднайте сир <em class="highlight">Маскарпоне</em> з охолодженими жовтками,
-                    а потім обережно вмішайте збиті вершки лопаткою.<br>
-                    <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-4-img.jpg?v=1720543437"
-                        alt="Збивання та з'єднання крему з Маскарпоне" class="step-img">
-                </div>
-                <div class="grid-item">
-                    <strong>Формування Тірамісу:</strong><br>
-                    Зваріть міцну каву та додайте 50 мл рому.
-                    Швидко вмочуйте печиво Савоярді в каву (буквально на 1 секунду) і викладайте шар у форму.
-                    Вкрийте шаром крему. Повторіть шари.<br>
-                    <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-5-img.jpg?v=1720543436"
-                        alt="Формування шарів Тірамісу у формі" class="step-img">
-                </div>
-                <div class="grid-item">
-                    <strong>Охолодження:</strong><br>
-                    Посипте десерт товстим шаром какао-порошку та залиште в холодильнику на 4-6 годин для просочування.<br>
-                    <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-6-img.jpg?v=1720543435"
-                        alt="Готовий десерт Тірамісу після охолодження" class="step-img">
-                </div>
-            </div>
-        </section>
-
-        <section id="nutrition" class="card">
-            <h2 class="section-title">Харчова цінність та калорійність (на 100 г)</h2>
-            <p style="margin-bottom: 15px;">Енергетична цінність домашнього десерту та його складових:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Складова десерту</th>
-                        <th>Калорійність (ккал)</th>
-                        <th>Білки (г)</th>
-                        <th>Жири (г)</th>
-                        <th>Вуглеводи (г)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Домашнє печиво Савоярді</td>
-                        <td>380</td>
-                        <td>8.5</td>
-                        <td>4.0</td>
-                        <td>76.0</td>
-                    </tr>
-                    <tr>
-                        <td>Крем Маскарпоне з вершками</td>
-                        <td>355</td>
-                        <td>5.0</td>
-                        <td>32.0</td>
-                        <td>12.0</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Тірамісу (готові порції)</strong></td>
-                        <td><strong>285</strong></td>
-                        <td><strong>6.2</strong></td>
-                        <td><strong>18.5</strong></td>
-                        <td><strong>24.0</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section class="box-section card">
-            <h2 class="section-title">Джерела</h2>
+        <aside class="useful-aside card">
+            <h3>Цікавий факт про назву</h3>
             <p>
-                Більше про секрети італійської кухні та оригінальні рецепти від Євгена Клопотенка? Завітайте на
-                <a href="https://klopotenko.com/tiramisu-ylublenyj-italijskij-desert/" target="_blank"
-                    rel="noopener noreferrer">офіційний рецепт Тірамісу від Євгена Клопотенка</a>.
+                Слово «tiramisù» буквально перекладається з італійської мови як «підніми мене вгору». Кулінари пов'язують це з високою енергетичною цінністю інгредієнтів десерту — бадьорої міцної кави та поживного сиру маскарпоне.
             </p>
+        </aside>
+
+        <section id="gallery">
+            <h2 class="section-title">Покроковий рецепт приготування</h2>
+            <article class="card">
+                <div class="grid-gallery">
+                    <div class="grid-item">
+                        <strong>Випікання печива Савоярді:</strong><br>
+                        Відокремте білки від жовтків. Збийте білки до міцних піків.
+                        Жовтки збийте з цукром, з'єднайте обидві маси, додайте просіяне борошно.
+                        За допомогою кондитерського мішка відсадіть смужки на деко,
+                        посипте пудрою та випікайте 10-12 хвилин при 180°C.<br>
+                        <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-2-img.jpg?v=1720543439"
+                            alt="Процес відсаджування тіста для домашнього печива Савоярді на деко" class="step-img">
+                    </div>
+                    <div class="grid-item">
+                        <strong>Термообробка жовтків:</strong><br>
+                        Помістіть 8 жовтків із цукром у миску та поставте на парову баню.
+                        Постійно збивайте віничком, поки маса не стане світлою та однорідною.
+                        Зніміть і дайте охолонути.<br>
+                        <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-3-img.jpg?v=1720543438"
+                            alt="Збивання жовтків із цукром у мисці на паровій бані" class="step-img">
+                    </div>
+                    <div class="grid-item">
+                        <strong>Приготування крему:</strong><br>
+                        Збийте холодні вершки до стійких піків.
+                        В окремій ємності з'єднайте сир <em class="highlight">Маскарпоне</em> з охолодженими жовтками,
+                        а потім обережно вмішайте збиті вершки лопаткою.<br>
+                        <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-4-img.jpg?v=1720543437"
+                            alt="Готування крем-мусу з маскарпоне та збитих вершків" class="step-img">
+                    </div>
+                    <div class="grid-item">
+                        <strong>Формування Тірамісу:</strong><br>
+                        Зваріть міцну каву та додайте 50 мл рому.
+                        Швидко вмочуйте печиво Савоярді в каву (буквально на 1 секунду) і викладайте шар у форму.
+                        Вкрийте шаром крему. Повторіть шари.<br>
+                        <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-5-img.jpg?v=1720543436"
+                            alt="Викладання шарів просоченого печива Савоярді та крему у форму" class="step-img">
+                    </div>
+                    <div class="grid-item">
+                        <strong>Охолодження:</strong><br>
+                        Посипте десерт товстим шаром какао-порошку та залиште в холодильнику на 4-6 годин для просочування.<br>
+                        <img src="https://klopotenko.com/wp-content/uploads/2022/11/tyramisu-onovlennya-6-img.jpg?v=1720543435"
+                            alt="Готовий охолоджений десерт Тірамісу, присипаний какао" class="step-img">
+                    </div>
+                </div>
+            </article>
         </section>
 
-    </div>
+        <section id="nutrition">
+            <h2 class="section-title">Харчова цінність та калорійність (на 100 г)</h2>
+            <article class="card">
+                <p style="margin-bottom: 15px;">Енергетична цінність домашнього десерту та його складових:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Складова десерту</th>
+                            <th>Калорійність (ккал)</th>
+                            <th>Білки (г)</th>
+                            <th>Жири (г)</th>
+                            <th>Вуглеводи (г)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Домашнє печиво Савоярді</td>
+                            <td>380</td>
+                            <td>8.5</td>
+                            <td>4.0</td>
+                            <td>76.0</td>
+                        </tr>
+                        <tr>
+                            <td>Крем Маскарпоне з вершками</td>
+                            <td>355</td>
+                            <td>5.0</td>
+                            <td>32.0</td>
+                            <td>12.0</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Тірамісу (готові порції)</strong></td>
+                            <td><strong>285</strong></td>
+                            <td><strong>6.2</strong></td>
+                            <td><strong>18.5</strong></td>
+                            <td><strong>24.0</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
 
-    <a href="#main-header" class="strilka">
-        ▲
+        <section class="box-section">
+            <h2 class="section-title">Джерела</h2>
+            <article class="card">
+                <p>
+                    Більше про секрети італійської кухні та оригінальні рецепти від Євгена Клопотенка? Завітайте на
+                    <a href="https://klopotenko.com/tiramisu-ylublenyj-italijskij-desert/" target="_blank"
+                        rel="noopener noreferrer">офіційний рецепт Тірамісу від Євгена Клопотенка</a>.
+                </p>
+            </article>
+        </section>
+
+    </main>
+    
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 року проєкт "Класичний тірамісу". Права захищені</p>
+            <p><strong>Навчальна дисципліна:</strong> Інженерія програмного забезпечення</p>
+            <p><strong>Автор проєкту:</strong> Петелюк Ірина</p>
+            <p><strong>Контакти:</strong> <a href="mailto:iryna.i.peteliuk@ukd.edu.ua" target="_blank">iryna.i.peteliuk@ukd.edu.ua</a></p>
+        </div>
+    </footer>
+
+  
+    <a href="#" class="strilka" aria-label="Повернутися на початок сторінки">
+        <span aria-hidden="true">▲</span>
     </a>
+
 </body>
 
 </html>
