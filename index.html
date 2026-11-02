@@ -192,6 +192,57 @@
             </article>
         </section>
 
+        <section id="contact" class="cont_sect">
+            <h2>Зв'язатися з нами</h2>
+            <form action="#" method="POST" class="card">
+                
+                <div class="form-group">
+                    <label for="user-name">Ваше ім'я:</label>
+                    <input type="text" id="user-name" name="user_name" placeholder="Наприклад, Ірина" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">Електронна пошта:</label>
+                    <input type="email" id="user-email" name="user_email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="appeal-topic">Оберіть тему звернення:</label>
+                    <select id="appeal-topic" name="appeal_topic">
+                        <option value="" disabled selected>Оберіть варіант</option>
+                        <option value="recipe">Запитання щодо рецепта</option>
+                        <option value="cooperation">Пропозиція співпраці</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-message">Ваше повідомлення:</label>
+                    <textarea id="user-message" name="user_message" rows="4" placeholder="Напишіть свій коментар або запитання..."></textarea>
+                </div>
+
+                <fieldset class="form-group radio-group">
+                    <legend>Бажаний спосіб зв'язку:</legend>
+                    <div class="radio-option">
+                        <input type="radio" id="contact-email" name="contact_method" value="email" checked>
+                        <label for="contact-email">Відповісти на Email</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                        <label for="contact-phone">Зателефонувати</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Я погоджуюсь на обробку персональних даних</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Надіслати повідомлення</button>
+
+            </form>
+        </section>
+
     </main>
     
     <footer class="site-footer">
