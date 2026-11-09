@@ -60,13 +60,13 @@ main, section, article, aside, header, footer {
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 4px;
-    transition: background-color 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .site-nav a:hover {
     background-color: #f3ece4;
     color: #b35900;
-    text-decoration: none;
+    text-shadow: 0 0 8px rgba(179, 89, 0, 0.4);
 }
 
 .container {
@@ -79,30 +79,45 @@ main, section, article, aside, header, footer {
     position: relative;
 }
 
+.hero-section {
+    background: linear-gradient(135deg, #4a2c2a 0%, #6b3e2e 50%, #8c6d58 100%);
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#page-title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 12px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
 .card {
     background-color: #ffffff;
     padding: 25px;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     margin-bottom: 25px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
+.card:hover {
+    transform: translateY(-6px) scale(1.015);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
 
 .useful-aside {
-    background-color: #fcf8f5;
+    background: radial-gradient(circle at top left, #fffbf7, #f3ece4);
     border-left: 5px solid #8c6d58;
     font-style: italic;
-}
-
-#page-title {
-    color: #4a2c2a;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-    border-bottom: 2px solid #8c6d58;
-    padding-bottom: 12px;
-    margin-bottom: 25px;
 }
 
 .strilka {
@@ -119,11 +134,11 @@ main, section, article, aside, header, footer {
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s, transform 0.2s;
     text-decoration: none;
     cursor: pointer;
     z-index: 999999;
     pointer-events: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .strilka:hover {
@@ -131,6 +146,7 @@ main, section, article, aside, header, footer {
     color: #ffffff;
     text-decoration: none;
     transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
 .section-title {
@@ -214,7 +230,6 @@ th {
 tbody tr:nth-child(even) {
     background-color: #fafafa;
 }
-
 .main-img {
     max-width: 100%;
     height: auto;
@@ -234,6 +249,7 @@ tbody tr:nth-child(even) {
     border: 1px solid #e0e0e0;
     padding: 15px;
     border-radius: 8px;
+    overflow: hidden; 
 }
 
 .step-img {
@@ -244,12 +260,18 @@ tbody tr:nth-child(even) {
     border: 1px solid #e0e0e0;
     margin-top: 10px;
     display: block;
+    transition: transform 0.4s ease-out;
+}
+
+.grid-item:hover .step-img {
+    transform: scale(1.08);
 }
 
 a {
     color: #b35900;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -284,6 +306,7 @@ li {
     flex-direction: column;
     gap: 8px;
 }
+
 form.card {
     max-width: 600px;
     margin: 0 auto;
@@ -313,16 +336,17 @@ textarea {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
     color: #333333;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #2563eb;
+    border-color: #b35900;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03), 0 0 0 3px rgba(179, 89, 0, 0.2);
     background-color: #ffffff;
 }
 
@@ -379,7 +403,7 @@ textarea:focus {
 
 .submit-btn {
     width: 100%;
-    background-color: #b35900;
+    background-image: linear-gradient(to right, #6b3e2e, #b35900);
     color: #ffffff;
     border: none;
     padding: 12px 20px;
@@ -387,14 +411,16 @@ textarea:focus {
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .submit-btn:hover {
-    background-color: #e67300;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(107, 62, 46, 0.35);
 }
 
 .submit-btn:active {
     transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
