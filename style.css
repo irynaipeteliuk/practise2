@@ -15,6 +15,13 @@ body {
     color: #333333;
     line-height: 1.6;
     padding-top: 80px; 
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 main, section, article, aside, header, footer {
@@ -58,8 +65,12 @@ main, section, article, aside, header, footer {
     color: #6b3e2e;
     font-weight: bold;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -77,6 +88,10 @@ main, section, article, aside, header, footer {
 
 .cont_sect {
     position: relative;
+}
+
+section {
+    padding: 25px;
 }
 
 .hero-section {
@@ -120,10 +135,12 @@ main, section, article, aside, header, footer {
     font-style: italic;
 }
 
-.strilka {
+.strilka, .btn-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    min-width: 44px;
+    min-height: 44px;
     width: 45px;
     height: 45px;
     background-color: #8c6d58;
@@ -138,10 +155,10 @@ main, section, article, aside, header, footer {
     cursor: pointer;
     z-index: 999999;
     pointer-events: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease, right 0.3s ease, bottom 0.3s ease;
 }
 
-.strilka:hover {
+.strilka:hover, .btn-top:hover {
     background-color: #b35900;
     color: #ffffff;
     text-decoration: none;
@@ -182,7 +199,7 @@ h2 {
     position: relative;
 }
 
-.sect_span {
+.sect_span, .badge {
     position: absolute;
     top: 43px;
     right: 15px;
@@ -193,6 +210,7 @@ h2 {
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 2;
 }
 
 strong {
@@ -207,6 +225,11 @@ em {
     background-color: #ffe6b3;
     padding: 2px 6px;
     border-radius: 4px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
 }
 
 table {
@@ -230,11 +253,10 @@ th {
 tbody tr:nth-child(even) {
     background-color: #fafafa;
 }
+
 .main-img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
     border-radius: 8px;
-    display: block;
     margin: 0 auto;
 }
 
@@ -254,12 +276,9 @@ tbody tr:nth-child(even) {
 
 .step-img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
     margin-top: 10px;
-    display: block;
     transition: transform 0.4s ease-out;
 }
 
@@ -367,12 +386,13 @@ textarea:focus {
     align-items: center;
     gap: 8px;
     margin-bottom: 8px;
+    min-height: 44px;
 }
 
 .radio-option input[type="radio"] {
     accent-color: #b35900;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
@@ -386,12 +406,13 @@ textarea:focus {
     display: flex;
     align-items: center;
     gap: 10px;
+    min-height: 44px;
 }
 
 .checkbox-group input[type="checkbox"] {
     accent-color: #b35900;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
 }
 
@@ -401,8 +422,9 @@ textarea:focus {
     cursor: pointer;
 }
 
-.submit-btn {
+.submit-btn, button[type="submit"] {
     width: 100%;
+    min-height: 44px;
     background-image: linear-gradient(to right, #6b3e2e, #b35900);
     color: #ffffff;
     border: none;
@@ -423,4 +445,97 @@ textarea:focus {
 .submit-btn:active {
     transform: translateY(1px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    #page-title {
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 130px; 
+    }
+
+    html {
+        scroll-padding-top: 140px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .site-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .site-nav a {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+
+    .grid-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+    form.card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .radio-group, .checkbox-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .submit-btn {
+        padding: 14px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #page-title {
+        font-size: 22px;
+    }
+
+    .section-title, h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .strilka, .btn-top {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        right: 15px;
+        bottom: 15px;
+        font-size: 16px;
+    }
+
+    .sect_span, .badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
 }
